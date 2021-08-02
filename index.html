@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./src/index.css" as="style">
+    <!--link href="./src/index.css"-->    
+    <link rel="stylesheet" href="./src/index.css">
+    <title>TextAI</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <section class="AntiPlagiarism">
+        <div class="AntiPlagiarism_header">
+            <h1 class="AntiPlagiarism_title">text.AI</h1>
+            <h2 class="AntiPlagiarism_subtitle">Intelligent App for text processing</h2>
+        </div>
+    
+        <div class="AntiPlagiarism_main">
+            <form class="AntiPlagiarism_form">
+                <div class="AntiPlagiarism_textinput">
+                    <textarea id="text" name="text" class="AntiPlagiarism_textarea" placeholder="Input text..."></textarea>
+                </div>
+                <div class="AntiPlagiarism_config">
+                    <div class="menu_select">
+                        <div class="menu_select_header">                            
+                            <img class="menu_select_icon" src="./src/uniq_icon.svg" width="40" height="35.07">
+                            <span class="menu_select_text">Uniqness</span>
+                            <img class="menu_select_buttonBottom" src="./src/rect_bottom.svg" width="24" height="12">
+                        </div>
+                        <div class="menu_select_body">
+                            <div class="menu_select_option">
+                                <img class="menu_select_icon" src="./src/uniq_icon.svg" width="40" height="35.07">
+                                <span class="menu_select_text">Uniqness</span>
+                                <img class="menu_select_buttonTop" src="./src/rect_top.svg" width="24" height="12">
+                            </div>
+                            <div class="menu_select_option">
+                                <img class="menu_select_icon" src="./src/repetition.svg" width="36" height="36">
+                                <span class="menu_select_text">Repetition</span>
+                            </div>
+                            <div class="menu_select_option">                                
+                                <img class="menu_select_icon" src="./src/misprint.svg" width="36.47" height="31.01">
+                                <span class="menu_select_text">Misprint</span>
+                            </div>
+                            <div class="menu_select_option">                                
+                                <img class="menu_select_icon" src="./src/validation.svg" width="34" height="34">
+                                <span class="menu_select_text">Validation</span>
+                            </div>
+                        </div>
+                    </div>                    
+                    <button type="button" id="button" class="AntiPlagiarism_button" title="Enter at least 3 words">Check</button>
+                </div>
+            </form>
+            <div id="img" class="AntiPlagiarism_img"></div>
+        </div>
+    
+        <div class="AntiPlagiarism_footer">
+            <div class="AntiPlagiarism_logo">
+                <a href="http://devincubator.by/">
+                    <img class="AntiPlagiarism_logo_img" src="src/devinc.svg" alt="logo" width="163" height="33">
+                </a>
+            </div>
+            <div class="AntiPlagiarism_authors">
+               <p class="AntiPlagiarism_authors_names">OduvAnchiki, 2021</p> 
+            </div>
+            <div class="AntiPlagiarism_socialnets">
+                <div>
+                    <a href="https://github.com/" class="AntiPlagiarism_link">
+                        <img src="src/github.svg" width="40" height="39.01">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://vk.com/" class="AntiPlagiarism_link">
+                        <img src="src/vk.svg" width="40" height="40">
+                    </a>
+                </div>
+                <div>
+                    <a href="http://facebook.com/" class="AntiPlagiarism_link">
+                        <img src="src/facebook.svg" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="src/particles.js"></script>
+    <script src="src/app.js"></script>
+
+    <script src="src/select.js"></script>
+    <script src="src/serverRequest.js"></script>
+</body>
+</html>
